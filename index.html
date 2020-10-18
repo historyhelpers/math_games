@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- classes are for css -->
+<!-- ids are for javascript -->
 
 <head>
     <meta charset="UTF-8">
@@ -7,14 +9,105 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <title>Math Games</title>
 </head>
 
 <body>
 
-    <h1>Math Peoblems</h1>
 
+    <!-- navbar: contains the site name on the top left -->
+
+    <nav class="nav-extended">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Math Games</a>
+            </div>
+            <div class="nav-content">
+                <ul class="tabs tabs-transparent">
+                    <!-- add section in nav bar -->
+                    <li class="tab"><a href="#game1">Test Game</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- game_div1 -->
+        <div id="game1" class="game_div1">
+
+            <!-- heading: 'test Game' -->
+            <h4>Test Game</h4>
+            <!-- problem element: the math problem of either addition, subtraction, multiplication or devision; ex: 3x3, 5+7 -->
+            <p id="problem-element" class="problem-element">5+7</p>
+
+            <!-- answer form -->
+            <form action="" class="game_1_form">
+                <!-- inputting answer from the user -->
+                <input placeholder="Answer" id="game_1_answer" type="text" id="game_1_input_field" class="game_1_input_field">
+                <!-- submitting answer from the user: submit button-->
+                <button class="btn">Submit Answer</button>
+            </form>
+
+            <!-- show score in text, ex: "You need to currect 2 more answer(s) to win" -->
+            <p>You need to currect <span>10</span> more answer(s) to win</p>
+            <!-- show score in text, ex: "Make 2 more mistakes and you'll lose" -->
+            <p>Make <span>3</span> more mistakes and you'll lose</p>
+
+            <!-- win progress bar: this will be a collection of 10 boxes that fills up {green} as the user answers currect -->
+            <div class="game_1_success_progress">
+                <div class="boxes">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="success_progress_inner_box" id="success_progress_inner_box"></div>
+            </div>
+            <!-- lose progress bar: this will be a collection of 3 boxes which fill up {red} as the user answers wrong -->
+            <div class="game_1_failure_progress">
+                <div class="boxes">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="failure_progress_inner_box" id="failure_progress_inner_box"></div>
+            </div>
+
+            <!-- overlay: this showes up over the game div as the game is over -->
+            <div class="overlay">
+                <div class="inner-overlay">
+                    <!-- overlay paragraph: "You win/lose" -->
+                    <p id="end_message">you win/lose</p>
+                    <!-- overlay button: "play again" -->
+                    <button class="btn-large" id="reset-btn">Play Again</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- footer -->
+    <footer class="page-footer">
+        <div class="container">
+            <!-- parapraph: 'made by Samit_08' -->
+            <p>
+                made by Samit_08
+                <!-- parapraph: link: 'github/almustansir', link: 'almustansir/portfolio' -->
+                <a href="#" class="footer_link1">Github</a>
+                <a href="#" class="footer_link2">Portfolio</a>
+            </p>
+        </div>
+    </footer>
 
     <script src="static/js/script.js"></script>
 </body>
