@@ -12,5 +12,5 @@ This Game is just a test game to see if this can be implemented in github. I fol
 
 #### Test Game 1 status:
    - [x] html
-   - [] JavaScript
-   - [] css
+   - [ ] JavaScript
+   - [ ] css
