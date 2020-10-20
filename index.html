@@ -35,63 +35,68 @@
 
     <div class="container">
 
-        <!-- game_div1 -->
-        <div id="game1" class="game_div1">
+        <div class="game1_container">
 
-            <!-- heading: 'test Game' -->
-            <h4>Test Game</h4>
-            <!-- problem element: the math problem of either addition, subtraction, multiplication or devision; ex: 3x3, 5+7 -->
-            <p id="problem-element" class="problem-element">5+7</p>
+            <!-- game_div1 -->
+            <div id="game1" class="game_div1">
 
-            <!-- answer form -->
-            <form action="" class="game_1_form">
-                <!-- inputting answer from the user -->
-                <input placeholder="Answer" id="game_1_answer" type="text" id="game_1_input_field" class="game_1_input_field">
-                <!-- submitting answer from the user: submit button-->
-                <button class="btn">Submit Answer</button>
-            </form>
 
-            <!-- show score in text, ex: "You need to currect 2 more answer(s) to win" -->
-            <p>You need to currect <span>10</span> more answer(s) to win</p>
-            <!-- show score in text, ex: "Make 2 more mistakes and you'll lose" -->
-            <p>Make <span>3</span> more mistakes and you'll lose</p>
+                <!-- heading: 'test Game' -->
+                <h4>Test Game</h4>
+                <!-- problem element: the math problem of either addition, subtraction, multiplication or devision; ex: 3x3, 5+7 -->
+                <p id="problem_element" class="problem-element"></p>
 
-            <!-- win progress bar: this will be a collection of 10 boxes that fills up {green} as the user answers currect -->
-            <div class="game_1_success_progress">
-                <div class="boxes">
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
+                <!-- answer form -->
+                <form action="" class="game_1_form" id="game_1_form">
+                    <!-- inputting answer from the user -->
+                    <input placeholder="Answer" id="game_1_answer" type="text" id="game_1_input_field" class="game_1_input_field">
+                    <!-- submitting answer from the user: submit button-->
+                    <button class="btn">Submit Answer</button>
+                </form>
+
+                <!-- show score in text, ex: "You need to currect 2 more answer(s) to win" -->
+                <p>You need to currect <span id="right_answer_score">10</span> more answer(s) to win</p>
+                <!-- show score in text, ex: "Make 2 more mistakes and you'll lose" -->
+                <p>Make <span id="wrong_answer_score">3</span> more mistakes and you'll lose</p>
+
+                <!-- win progress bar: this will be a collection of 10 boxes that fills up {green} as the user answers currect -->
+                <div class="game_1_success_progress">
+                    <div class="boxes">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </div>
+                    <div class="success_progress_inner_box" id="success_progress_inner_box"></div>
                 </div>
-                <div class="success_progress_inner_box" id="success_progress_inner_box"></div>
-            </div>
-            <!-- lose progress bar: this will be a collection of 3 boxes which fill up {red} as the user answers wrong -->
-            <div class="game_1_failure_progress">
-                <div class="boxes">
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
+
+                <!-- lose progress bar: this will be a collection of 3 boxes which fill up {red} as the user answers wrong -->
+                <div class="game_1_failure_progress">
+                    <div class="boxes">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </div>
+                    <div class="failure_progress_inner_box" id="failure_progress_inner_box"></div>
                 </div>
-                <div class="failure_progress_inner_box" id="failure_progress_inner_box"></div>
+
             </div>
 
             <!-- overlay: this showes up over the game div as the game is over -->
-            <div class="overlay">
+            <div class="overlay_off" id="overlay">
                 <div class="inner-overlay">
                     <!-- overlay paragraph: "You win/lose" -->
-                    <p id="end_message">you win/lose</p>
+                    <p id="end_message"></p>
                     <!-- overlay button: "play again" -->
                     <button class="btn-large" id="reset-btn">Play Again</button>
                 </div>
             </div>
-
         </div>
 
     </div>
@@ -103,8 +108,8 @@
             <p>
                 made by Samit_08
                 <!-- parapraph: link: 'github/almustansir', link: 'almustansir/portfolio' -->
-                <a href="#" class="footer_link1">Github</a>
-                <a href="#" class="footer_link2">Portfolio</a>
+                <a href="https://github.com/almustansir" class="footer_link1">Github</a>
+                <!-- <a href="#" class="footer_link2">Portfolio</a> -->
             </p>
         </div>
     </footer>

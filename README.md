@@ -14,3 +14,8 @@ This Game is just a test game to see if this can be implemented in github. I fol
    - [x] html
    - [ ] JavaScript
    - [ ] css
+
+##### Things left to work on
+    - progress bars
+    - CSS
+    - UX(auto-select and auto-erase)

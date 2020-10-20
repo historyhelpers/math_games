@@ -6,6 +6,51 @@ form {
     text-align: center;
 }
 
+.container {
+    /* border: .5px solid black; */
+}
+
+.problem-element {
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+}
+
+.game1_container {
+    margin: 15px 0 15px 0;
+    position: relative;
+}
+
+.game_div1 {
+    /* border: 1px solid orange; */
+    text-align: center;
+}
+
+.overlay_off {
+    /* visibility: hidden; */
+    display: none;
+}
+
+.overlay_on {
+    border: 2px solid blue;
+    text-align: center;
+    position: absolute;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: rgba(136, 0, 136, 0.5);
+}
+
+.overlay_on p {
+    font-size: 40px;
+    color: #ddd;
+}
+
 .page-footer {
     background-color: #088 !important;
+}
+
+footer {
+    /* visibility: hidden; */
 }
