@@ -1,6 +1,9 @@
 # math_games
 A few math games.
 
+##### UPDATED
+    - all i did was that i just fixed grammar errors and removed navbar and stuff cuz there was one game
+
 This page is an attempt to make simple math games for kids using JavaScript. The idea is to see the extend of JavaScript when it comes to mathematical problems.
 
 ## Games:
